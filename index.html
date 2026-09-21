@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="DEPOIS. E depois? Algo está chegando." />
+  <title>DEPOIS. — E depois?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a href="#top" class="brand" aria-label="DEPOIS">DEPOIS.</a>
+    <div class="lang-switch" aria-label="Language selector">
+      <button data-lang="pt" class="active">PT</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="es">ES</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="eyebrow" data-i18n="eyebrow">Algo está chegando.</div>
+      <h1>DEPOIS.</h1>
+      <p class="question" data-i18n="question">E depois?</p>
+      <p class="lead" data-i18n="heroLead">Você sabe o que está fazendo agora. Mas o que acontece depois pode mudar tudo.</p>
+      <a class="ghost-link" href="#waitlist" data-i18n="ctaDiscover">Quero descobrir primeiro</a>
+      <div class="scroll-cue" aria-hidden="true">↓</div>
+    </section>
+
+    <section class="section reveal">
+      <div class="narrow">
+        <p class="statement" data-i18n="maybe1">Talvez você já saiba.</p>
+        <p class="statement" data-i18n="maybe2">Talvez ache que sabe.</p>
+        <p class="statement muted" data-i18n="maybe3">Talvez ainda não faça ideia.</p>
+        <p class="statement accent" data-i18n="maybe4">Tudo bem.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="narrow">
+        <p class="kicker" data-i18n="notForEveryone">NÃO É PARA TODO MUNDO.</p>
+        <h2 data-i18n="notYet">Pelo menos, não ainda.</h2>
+        <p data-i18n="firstPeople">As primeiras pessoas vão entrar antes. Vão descobrir antes. Vão experimentar antes. E vão fazer parte do começo.</p>
+      </div>
+    </section>
+
+    <section class="section center reveal">
+      <p class="kicker" data-i18n="whatIs">O QUE É DEPOIS?</p>
+      <h2 class="huge" data-i18n="notYetAnswer">Ainda não.</h2>
+      <div class="eye">◉</div>
+      <p class="subtle" data-i18n="oneThing">Mas podemos contar uma coisa.</p>
+      <p class="bold-line" data-i18n="notJustApp">Não é apenas mais um aplicativo.</p>
+    </section>
+
+    <section class="section reveal">
+      <div class="chat-shell">
+        <div class="chat-label" data-i18n="oneQuestion">Uma pergunta.</div>
+        <div class="chat-line"><span class="prompt">›</span><span id="rotatingPhrase">Terminei o ensino médio.</span><span class="cursor">|</span></div>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section reveal">
+      <div class="panel">
+        <p class="kicker" data-i18n="earlyTitle">E SE VOCÊ PUDESSE ENTRAR ANTES?</p>
+        <h2 data-i18n="waitTitle">Entre na lista das primeiras pessoas.</h2>
+        <p data-i18n="waitCopy">Você será avisado antes do lançamento público e receberá as primeiras pistas.</p>
+        <form id="waitlistForm">
+          <input name="name" type="text" required data-i18n-placeholder="name" placeholder="Nome" />
+          <input name="email" type="email" required data-i18n-placeholder="email" placeholder="E-mail" />
+          <input name="country" type="text" required data-i18n-placeholder="country" placeholder="País" />
+          <button type="submit" data-i18n="joinWaitlist">QUERO DESCOBRIR</button>
+        </form>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </div>
+    </section>
+
+    <section class="section center reveal">
+      <div class="counter-number" id="counter">0</div>
+      <p class="counter-copy" data-i18n="waiting">pessoas esperando para descobrir o que vem DEPOIS.</p>
+    </section>
+
+    <section class="section reveal">
+      <div class="founder-card">
+        <p class="kicker" data-i18n="founderDoor">EXISTE UMA PORTA QUE NEM TODOS VERÃO.</p>
+        <h2 data-i18n="founderTitle">PASSE FUNDADOR</h2>
+        <p data-i18n="founderCopy">Para quem não quer apenas esperar. O Passe Fundador reserva acesso antecipado às primeiras experiências e um lugar na fase inicial de construção.</p>
+        <div class="price-row"><span>€9</span><span class="or">/</span><span>R$49</span></div>
+        <button id="founderButton" class="founder-button" data-i18n="founderCta">QUERO SER FUNDADOR</button>
+        <p class="legal" data-i18n="legal">Acesso antecipado a um produto em desenvolvimento. Recursos, cronograma e funcionalidades podem mudar até o lançamento público. Pagamento ainda não está ativo nesta página.</p>
+      </div>
+    </section>
+
+    <section class="section final-screen reveal">
+      <h2 data-i18n="youEntered">VOCÊ ENTROU.</h2>
+      <p data-i18n="reserved">Seu lugar está reservado.</p>
+      <p class="dots">...</p>
+      <h3 data-i18n="finalQuestion">E depois?</h3>
+      <p class="coming" data-i18n="soon">EM BREVE.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>DEPOIS.</span>
+    <span>© <span id="year"></span></span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
